@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+    <body>
+        <h1>Robots</h1>
+        <ul>
+            <% for(let i = 0; i < robots.length; i++){ %>
+                <li>
+                  Robot <a href="/robots/<%=robots[i].id%>"><%=robots[i].name; %></a> has <%= robots[i].weapon %> as a weapon
+                  but is <%= robots[i].isDangerous %>.
+                  
+                </li>
+                <br>
+            <% } %>
+        </ul>
+        <nav>
+            <a href="/robots/new">Create a new Robot</a>
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h1>Modify robot</h1>
+
+  <form action="/robots/<%=robots.id%>?_method=PUT" method="POST">
+    Name: <input type="text" name="name" value='<%= robots.name %>' ><br/>
+    lethal: <input type="text" name="lethal" value='<%= robots.lethal %>'><br/>
+    isDangerous:<input type="text" name="isDangerous" value='<%= robots.isDangerous %>'><br/>
+    weapon:<input type="text" name='weapon' value='<%= robots.weapon %>'><br/>
+    <a href="/robots"><button>Return</button></a> <br>
+
+    <input type="submit">
+  </form>
+
+
+</body>
+</html>
